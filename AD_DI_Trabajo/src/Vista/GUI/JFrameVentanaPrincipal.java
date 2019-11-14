@@ -537,8 +537,8 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             } else {
                 File rutaOrigen = new File(jLabelRutaOrigen.getText());
                 File rutaDestino = new File(jLabelRutaDestino.getText() + "\\BackUp");
-                ArrayList<File> numFicheros = new ArrayList<>();    
-                OperacionesFicheros operaciones = new OperacionesFicheros(this);  
+                ArrayList<File> numFicheros = new ArrayList<>();
+                OperacionesFicheros operaciones = new OperacionesFicheros(this);
 
                 numFicheros = OperacionesFicheros.listarFicherosExtension(rutaOrigen, extensiones);
                 jProgressBarFicherosCopiados.setMaximum(numFicheros.size());
@@ -558,6 +558,8 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
+        jLabelAvisos.setForeground(Color.green);
+        jLabelAvisos.setText("Se ha hecho la copia de seguridad.");
     }//GEN-LAST:event_jButtonBackUpMouseClicked
 
     private void jButtonDuplicadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonDuplicadosMouseClicked
@@ -612,6 +614,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonOrganizarBackUpMouseClicked
 
     private void jCheckBoxTodosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxTodosMouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxTodos.isSelected()) {
             jCheckBoxJPG.setSelected(true);
             extensiones.add(jCheckBoxJPG.getText());
@@ -654,6 +657,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxTodosMouseClicked
 
     private void jCheckBoxJPGMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxJPGMouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxJPG.isSelected()) {
             extensiones.add(jCheckBoxJPG.getText());
         } else {
@@ -664,6 +668,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxJPGMouseClicked
 
     private void jCheckBoxPNGMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxPNGMouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxPNG.isSelected()) {
             extensiones.add(jCheckBoxPNG.getText());
         } else {
@@ -674,6 +679,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxPNGMouseClicked
 
     private void jCheckBoxGIFMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxGIFMouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxGIF.isSelected()) {
             extensiones.add(jCheckBoxGIF.getText());
         } else {
@@ -684,6 +690,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxGIFMouseClicked
 
     private void jCheckBoxAVIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxAVIMouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxAVI.isSelected()) {
             extensiones.add(jCheckBoxAVI.getText());
         } else {
@@ -694,6 +701,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxAVIMouseClicked
 
     private void jCheckBoxMP4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxMP4MouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxMP4.isSelected()) {
             extensiones.add(jCheckBoxMP4.getText());
         } else {
@@ -704,6 +712,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxMP4MouseClicked
 
     private void jCheckBoxMP3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxMP3MouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxMP3.isSelected()) {
             extensiones.add(jCheckBoxMP3.getText());
         } else {
@@ -714,6 +723,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxMP3MouseClicked
 
     private void jCheckBoxWAVMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxWAVMouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxWAV.isSelected()) {
             extensiones.add(jCheckBoxWAV.getText());
         } else {
@@ -724,6 +734,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxWAVMouseClicked
 
     private void jCheckBoxPDFMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxPDFMouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxPDF.isSelected()) {
             extensiones.add(jCheckBoxPDF.getText());
         } else {
@@ -734,6 +745,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxPDFMouseClicked
 
     private void jCheckBoxTXTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxTXTMouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxTXT.isSelected()) {
             extensiones.add(jCheckBoxTXT.getText());
         } else {
@@ -744,6 +756,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxTXTMouseClicked
 
     private void jCheckBoxDOCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxDOCMouseClicked
+        jLabelAvisos.setText("");
         if (jCheckBoxDOC.isSelected()) {
             extensiones.add(jCheckBoxDOC.getText());
         } else {
@@ -839,6 +852,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonVerDuplicadosMouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        jLabelAvisos.setText("");
         PantallaInformación pantallaInformacion = new PantallaInformación(this, true);
         pantallaInformacion.setVisible(true);
     }//GEN-LAST:event_jButton1MouseClicked
