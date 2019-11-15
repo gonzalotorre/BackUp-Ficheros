@@ -4,12 +4,14 @@ import Modelo.OperacionesFicheros;
 import Vista.DTO.Fichero;
 import Vista.Logica.LogicaFichero;
 import java.awt.Color;
+import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 
 /**
@@ -25,8 +27,19 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
      */
     public JFrameVentanaPrincipal() {
         initComponents();
+        //Para cambiar el nombre de la aplicación.
+        setTitle("BackUp");
+        //Para cambiar el icono de la aplicación.
+        Image icono = new ImageIcon("images" + File.separator + "icono.gif").getImage();
+        setIconImage(icono);
     }
 
+    /**
+     * Método para actualizar la barra de progreso.
+     *
+     * @param rutaArchivo que sería la ruta del archivo que se está copiando.
+     * @param progreso que sería el valor a introducir en la barra de progreso.
+     */
     public void actualizarInterfazProgreso(String rutaArchivo, int progreso) {
         jLabelNombreFicheroCopiado.setText(rutaArchivo);
         jProgressBarFicherosCopiados.setValue(progreso);
@@ -548,6 +561,8 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                         try {
                             operaciones.copiarConFiltro(rutaOrigen, rutaDestino, extensiones, 1);
                             OperacionesFicheros.eliminaCarpetasVacias(rutaDestino);
+                            jLabelAvisos.setForeground(Color.green);
+                            jLabelAvisos.setText("Se ha hecho la copia de seguridad.");
                         } catch (IOException ex) {
                             Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
                         }
@@ -558,8 +573,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
-        jLabelAvisos.setForeground(Color.green);
-        jLabelAvisos.setText("Se ha hecho la copia de seguridad.");
+
     }//GEN-LAST:event_jButtonBackUpMouseClicked
 
     private void jButtonDuplicadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonDuplicadosMouseClicked
@@ -604,9 +618,14 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                 jLabelAvisos.setText("Debes hacer primero la copia de seguridad.");
             } else {
                 File rutaBackUp = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
-                OperacionesFicheros.oredenarBackUp(rutaBackUp, jLabelRutaDestino.getText() + File.separator + "BackUp");
-                jLabelAvisos.setForeground(Color.green);
-                jLabelAvisos.setText("Se ha ordenado la copia de seguirad en una nueva carpeta.");
+                if (!(rutaBackUp.length() == 0)) {
+                    OperacionesFicheros.oredenarBackUp(rutaBackUp, jLabelRutaDestino.getText() + File.separator + "BackUp");
+                    jLabelAvisos.setForeground(Color.green);
+                    jLabelAvisos.setText("Se ha ordenado la copia de seguirad en una nueva carpeta.");
+                } else {
+                    jLabelAvisos.setForeground(Color.red);
+                    jLabelAvisos.setText("No se pudo organizar la copia de seguridad, la carpeta BackUp está vacía.");
+                }
             }
         } catch (IOException ex) {
             Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
