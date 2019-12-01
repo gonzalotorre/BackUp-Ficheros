@@ -26,7 +26,6 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabelAvisos" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -43,16 +42,16 @@
                           <Component id="jProgressBarFicherosCopiados" max="32767" attributes="0"/>
                           <Component id="jLabelTitulo" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jButtonDuplicados" pref="132" max="32767" attributes="0"/>
-                                          <Component id="jButtonBackUp" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jButtonColorFondoHacerBackUp" max="32767" attributes="0"/>
+                                          <Component id="jButtonColorFondoDuplicados" pref="146" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jButtonVerDuplicados" min="-2" pref="152" max="-2" attributes="0"/>
-                                          <Component id="jButtonEspacioLibre" min="-2" pref="152" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jButtonColorFondoEspacioLibre" min="-2" pref="152" max="-2" attributes="0"/>
+                                          <Component id="jButtonColorFondoVerDuplicados" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Component id="jLabelNombreFicheroCopiado" alignment="0" min="-2" pref="290" max="-2" attributes="0"/>
@@ -65,6 +64,10 @@
                           <Component id="jPanelConfiguracion" max="32767" attributes="0"/>
                           <Component id="jPanelOtrasOpciones" alignment="0" max="32767" attributes="0"/>
                       </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jLabelAvisos" min="-2" pref="651" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -88,13 +91,13 @@
                       <Component id="jLabelRutaDestino" min="-2" pref="23" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButtonEspacioLibre" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButtonBackUp" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonColorFondoEspacioLibre" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonColorFondoHacerBackUp" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButtonDuplicados" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButtonVerDuplicados" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonColorFondoVerDuplicados" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonColorFondoDuplicados" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabelEspacioLibreYDuplicados" min="-2" pref="21" max="-2" attributes="0"/>
@@ -194,14 +197,14 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jLabelConfiguracion" max="32767" attributes="0"/>
-                              <Component id="jLabelDestino" alignment="0" pref="225" max="32767" attributes="0"/>
-                              <Component id="jLabelArchivosCopiar" alignment="0" pref="225" max="32767" attributes="0"/>
+                              <Component id="jLabelDestino" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabelArchivosCopiar" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jButtonSeleccionar2" max="32767" attributes="0"/>
-                              <Component id="jButtonSeleccionar1" max="32767" attributes="0"/>
-                              <Component id="jButton1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonColorFondoInformacion" alignment="1" pref="0" max="32767" attributes="0"/>
+                              <Component id="jButtonColorFondoSeleccionarOrigen" max="32767" attributes="0"/>
+                              <Component id="jButtonColorFondoSeleccionarRutaDestino" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -213,19 +216,19 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabelConfiguracion" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabelConfiguracion" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonColorFondoInformacion" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabelArchivosCopiar" alignment="3" max="32767" attributes="0"/>
-                      <Component id="jButtonSeleccionar1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelArchivosCopiar" alignment="3" pref="23" max="32767" attributes="0"/>
+                      <Component id="jButtonColorFondoSeleccionarOrigen" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButtonSeleccionar2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabelDestino" alignment="3" max="32767" attributes="0"/>
+                      <Component id="jButtonColorFondoSeleccionarRutaDestino" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jLabelTiposArchivo" min="-2" max="-2" attributes="0"/>
@@ -269,14 +272,6 @@
             <Property name="text" type="java.lang.String" value="Seleccionar ruta de archivos a copiar"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButtonSeleccionar2">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Seleccionar"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonSeleccionar2MouseClicked"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabelDestino">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -284,14 +279,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Seleccionar ruta de destino"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="jButtonSeleccionar1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Seleccionar"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonSeleccionar1MouseClicked"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabelTiposArchivo">
           <Properties>
@@ -389,12 +376,37 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxTodosMouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoInformacion">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Informaci&#xf3;n"/>
+            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,35,-1,0,112,112,112"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Informacion"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoInformacionMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoSeleccionarOrigen">
+          <Properties>
+            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,35,-1,0,112,112,112"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Seleccionar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoSeleccionarOrigenMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoSeleccionarRutaDestino">
+          <Properties>
+            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,35,-1,0,112,112,112"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Seleccionar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoSeleccionarRutaDestinoMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>
@@ -420,22 +432,6 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButtonBackUp">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Hacer BackUp"/>
-      </Properties>
-      <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonBackUpMouseClicked"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButtonEspacioLibre">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Espacio libre en disco"/>
-      </Properties>
-      <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonEspacioLibreMouseClicked"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabelEspacioLibreYDuplicados">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -457,14 +453,6 @@
         <Property name="text" type="java.lang.String" value="Copia de seguridad de discos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButtonDuplicados">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Archivos duplicados"/>
-      </Properties>
-      <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonDuplicadosMouseClicked"/>
-      </Events>
-    </Component>
     <Container class="javax.swing.JPanel" name="jPanelOtrasOpciones">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -480,20 +468,20 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Component id="jLabelOtrasOpciones" pref="160" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jButtonEliminarDuplicados" pref="150" max="32767" attributes="0"/>
-                              <Component id="jButtonEliminarCopia" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jButtonColorFondoEliminarDuplicados" max="32767" attributes="0"/>
+                              <Component id="jButtonColorFondoEliminarCopia" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="jLabelOtrasOpciones" pref="160" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jButtonOrganizarBackUp" pref="150" max="32767" attributes="0"/>
-                      <Component id="jButtonEliminarCopiaOrdenada" max="32767" attributes="0"/>
-                      <Component id="jButtonArchivosCopiados" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButtonColorFondoVerCopiados" max="32767" attributes="0"/>
+                      <Component id="jButtonColorFondoOrganizarBackUp" max="32767" attributes="0"/>
+                      <Component id="jButtonColorFondoEliminarCopiaOrdenada" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -502,20 +490,20 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelOtrasOpciones" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButtonArchivosCopiados" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonColorFondoVerCopiados" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButtonEliminarCopia" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButtonOrganizarBackUp" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonColorFondoEliminarCopia" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonColorFondoOrganizarBackUp" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButtonEliminarDuplicados" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButtonEliminarCopiaOrdenada" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonColorFondoEliminarDuplicados" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonColorFondoEliminarCopiaOrdenada" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="16" max="32767" attributes="0"/>
               </Group>
@@ -532,44 +520,59 @@
             <Property name="text" type="java.lang.String" value="Otras Opciones"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButtonEliminarCopia">
+        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoVerCopiados">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Eliminar Copia"/>
+            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-16,-1,112,112,112"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ver archivos copiados"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonEliminarCopiaMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoVerCopiadosMouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButtonEliminarDuplicados">
+        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoEliminarCopia">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Eliminar Duplicados"/>
+            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-16,-1,112,112,112"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Eliminar copia"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonEliminarDuplicadosMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoEliminarCopiaMouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButtonOrganizarBackUp">
+        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoEliminarDuplicados">
           <Properties>
+            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-16,-1,112,112,112"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Eliminar duplicados"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoEliminarDuplicadosMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoOrganizarBackUp">
+          <Properties>
+            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-16,-1,112,112,112"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Organizar BackUp"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonOrganizarBackUpMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoOrganizarBackUpMouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButtonEliminarCopiaOrdenada">
+        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoEliminarCopiaOrdenada">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Eliminar Copia Ordenada"/>
+            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-16,-1,112,112,112"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Eliminar copia ordenada"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonEliminarCopiaOrdenadaMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="jButtonArchivosCopiados">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Ver Archivos Copiados"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonArchivosCopiadosMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoEliminarCopiaOrdenadaMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>
@@ -584,15 +587,51 @@
     </Component>
     <Component class="javax.swing.JProgressBar" name="jProgressBarFicherosCopiados">
     </Component>
-    <Component class="javax.swing.JButton" name="jButtonVerDuplicados">
+    <Component class="javax.swing.JLabel" name="jLabelNombreFicheroCopiado">
+    </Component>
+    <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoEspacioLibre">
       <Properties>
+        <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-1,0,112,112,112"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Espacio libre en disco"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoEspacioLibreMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoHacerBackUp">
+      <Properties>
+        <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-1,0,112,112,112"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Hacer BackUp"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoHacerBackUpMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoDuplicados">
+      <Properties>
+        <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-1,0,112,112,112"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Archivos duplicados"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoDuplicadosMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoVerDuplicados">
+      <Properties>
+        <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-1,0,112,112,112"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ver duplicados"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonVerDuplicadosMouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoVerDuplicadosMouseClicked"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabelNombreFicheroCopiado">
     </Component>
   </SubComponents>
 </Form>
