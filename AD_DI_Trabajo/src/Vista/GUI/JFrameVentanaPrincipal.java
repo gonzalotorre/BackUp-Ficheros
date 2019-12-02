@@ -81,16 +81,16 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelTitulo = new javax.swing.JLabel();
         jPanelOtrasOpciones = new javax.swing.JPanel();
         jLabelOtrasOpciones = new javax.swing.JLabel();
-        jButtonColorFondoVerCopiados = new GUI.JButtonColorFondo();
         jButtonColorFondoEliminarCopia = new GUI.JButtonColorFondo();
         jButtonColorFondoEliminarDuplicados = new GUI.JButtonColorFondo();
+        jButtonColorFondoVerCopiados = new GUI.JButtonColorFondo();
         jButtonColorFondoOrganizarBackUp = new GUI.JButtonColorFondo();
         jButtonColorFondoEliminarCopiaOrdenada = new GUI.JButtonColorFondo();
         jLabelAvisos = new javax.swing.JLabel();
         jProgressBarFicherosCopiados = new javax.swing.JProgressBar();
         jLabelNombreFicheroCopiado = new javax.swing.JLabel();
-        jButtonColorFondoEspacioLibre = new GUI.JButtonColorFondo();
         jButtonColorFondoHacerBackUp = new GUI.JButtonColorFondo();
+        jButtonColorFondoEspacioLibre = new GUI.JButtonColorFondo();
         jButtonColorFondoDuplicados = new GUI.JButtonColorFondo();
         jButtonColorFondoVerDuplicados = new GUI.JButtonColorFondo();
 
@@ -193,7 +193,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoInformacion.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-14418176)));
         jButtonColorFondoInformacion.setText("Informacion");
         jButtonColorFondoInformacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -201,7 +200,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoSeleccionarOrigen.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-14418176)));
+        jButtonColorFondoSeleccionarOrigen.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
         jButtonColorFondoSeleccionarOrigen.setText("Seleccionar");
         jButtonColorFondoSeleccionarOrigen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -209,7 +208,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoSeleccionarRutaDestino.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-14418176)));
+        jButtonColorFondoSeleccionarRutaDestino.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
         jButtonColorFondoSeleccionarRutaDestino.setText("Seleccionar");
         jButtonColorFondoSeleccionarRutaDestino.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -264,8 +263,11 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButtonColorFondoInformacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jButtonColorFondoSeleccionarOrigen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButtonColorFondoSeleccionarRutaDestino, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
+                                .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButtonColorFondoSeleccionarOrigen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButtonColorFondoSeleccionarRutaDestino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())))
         );
         jPanelConfiguracionLayout.setVerticalGroup(
@@ -322,15 +324,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelOtrasOpciones.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelOtrasOpciones.setText("Otras Opciones");
 
-        jButtonColorFondoVerCopiados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16715521)));
-        jButtonColorFondoVerCopiados.setText("Ver archivos copiados");
-        jButtonColorFondoVerCopiados.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButtonColorFondoVerCopiadosMouseClicked(evt);
-            }
-        });
-
-        jButtonColorFondoEliminarCopia.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16715521)));
+        jButtonColorFondoEliminarCopia.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
         jButtonColorFondoEliminarCopia.setText("Eliminar copia");
         jButtonColorFondoEliminarCopia.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -338,7 +332,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoEliminarDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16715521)));
+        jButtonColorFondoEliminarDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
         jButtonColorFondoEliminarDuplicados.setText("Eliminar duplicados");
         jButtonColorFondoEliminarDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -346,7 +340,15 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoOrganizarBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16715521)));
+        jButtonColorFondoVerCopiados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoVerCopiados.setText("Ver archivos copiados");
+        jButtonColorFondoVerCopiados.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonColorFondoVerCopiadosMouseClicked(evt);
+            }
+        });
+
+        jButtonColorFondoOrganizarBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
         jButtonColorFondoOrganizarBackUp.setText("Organizar BackUp");
         jButtonColorFondoOrganizarBackUp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -354,7 +356,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoEliminarCopiaOrdenada.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16715521)));
+        jButtonColorFondoEliminarCopiaOrdenada.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
         jButtonColorFondoEliminarCopiaOrdenada.setText("Eliminar copia ordenada");
         jButtonColorFondoEliminarCopiaOrdenada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -368,19 +370,16 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelOtrasOpcionesLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabelOtrasOpciones, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
-                    .addGroup(jPanelOtrasOpcionesLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonColorFondoEliminarDuplicados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButtonColorFondoEliminarCopia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addGroup(jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabelOtrasOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonColorFondoEliminarCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonColorFondoEliminarDuplicados, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonColorFondoVerCopiados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButtonColorFondoOrganizarBackUp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButtonColorFondoEliminarCopiaOrdenada, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addComponent(jButtonColorFondoVerCopiados, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonColorFondoOrganizarBackUp, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonColorFondoEliminarCopiaOrdenada, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelOtrasOpcionesLayout.setVerticalGroup(
             jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -403,15 +402,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelAvisos.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelAvisos.setText(" ");
 
-        jButtonColorFondoEspacioLibre.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-256)));
-        jButtonColorFondoEspacioLibre.setText("Espacio libre en disco");
-        jButtonColorFondoEspacioLibre.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButtonColorFondoEspacioLibreMouseClicked(evt);
-            }
-        });
-
-        jButtonColorFondoHacerBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-256)));
+        jButtonColorFondoHacerBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
         jButtonColorFondoHacerBackUp.setText("Hacer BackUp");
         jButtonColorFondoHacerBackUp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -419,7 +410,15 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-256)));
+        jButtonColorFondoEspacioLibre.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoEspacioLibre.setText("Espacio libre en disco");
+        jButtonColorFondoEspacioLibre.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonColorFondoEspacioLibreMouseClicked(evt);
+            }
+        });
+
+        jButtonColorFondoDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
         jButtonColorFondoDuplicados.setText("Archivos duplicados");
         jButtonColorFondoDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -427,7 +426,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoVerDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-256)));
+        jButtonColorFondoVerDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
         jButtonColorFondoVerDuplicados.setText("Ver duplicados");
         jButtonColorFondoVerDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -459,12 +458,12 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jButtonColorFondoHacerBackUp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jButtonColorFondoDuplicados, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jButtonColorFondoHacerBackUp, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButtonColorFondoDuplicados, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jButtonColorFondoEspacioLibre, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButtonColorFondoVerDuplicados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                            .addComponent(jButtonColorFondoVerDuplicados, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addComponent(jLabelNombreFicheroCopiado, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(18, 18, 18)
@@ -493,12 +492,12 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                         .addComponent(jLabelRutaDestino, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButtonColorFondoEspacioLibre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonColorFondoHacerBackUp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButtonColorFondoHacerBackUp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonColorFondoEspacioLibre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButtonColorFondoVerDuplicados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonColorFondoDuplicados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButtonColorFondoDuplicados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonColorFondoVerDuplicados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(jLabelEspacioLibreYDuplicados, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
@@ -670,17 +669,11 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jCheckBoxDOCMouseClicked
 
-    private void jButtonColorFondoEspacioLibreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEspacioLibreMouseClicked
+    private void jButtonColorFondoInformacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoInformacionMouseClicked
         jLabelAvisos.setText("");
-        if ("".equals(jLabelRutaDestino.getText())) {
-            jLabelAvisos.setForeground(Color.red);
-            jLabelAvisos.setText("Por favor introduce la ruta del disco (destino) para saber el espacio libre.");
-        } else {
-            File disco = new File(jLabelRutaDestino.getText());
-            long espacio = OperacionesFicheros.espacioLibre(disco);
-            jLabelEspacioLibreYDuplicados.setText("Quedan " + espacio + "Gb libres");
-        }
-    }//GEN-LAST:event_jButtonColorFondoEspacioLibreMouseClicked
+        PantallaInformación pantallaInformacion = new PantallaInformación(this, true);
+        pantallaInformacion.setVisible(true);
+    }//GEN-LAST:event_jButtonColorFondoInformacionMouseClicked
 
     private void jButtonColorFondoHacerBackUpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoHacerBackUpMouseClicked
         try {
@@ -715,6 +708,18 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButtonColorFondoHacerBackUpMouseClicked
+
+    private void jButtonColorFondoEspacioLibreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEspacioLibreMouseClicked
+        jLabelAvisos.setText("");
+        if ("".equals(jLabelRutaDestino.getText())) {
+            jLabelAvisos.setForeground(Color.red);
+            jLabelAvisos.setText("Por favor introduce la ruta del disco (destino) para saber el espacio libre.");
+        } else {
+            File disco = new File(jLabelRutaDestino.getText());
+            long espacio = OperacionesFicheros.espacioLibre(disco);
+            jLabelEspacioLibreYDuplicados.setText("Quedan " + espacio + "Gb libres");
+        }
+    }//GEN-LAST:event_jButtonColorFondoEspacioLibreMouseClicked
 
     private void jButtonColorFondoDuplicadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoDuplicadosMouseClicked
         try {
@@ -758,32 +763,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButtonColorFondoVerDuplicadosMouseClicked
 
-    private void jButtonColorFondoVerCopiadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoVerCopiadosMouseClicked
-        try {
-            jLabelAvisos.setText("");
-            File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
-            if (!ruta.exists()) {
-                jLabelAvisos.setForeground(Color.red);
-                jLabelAvisos.setText("Para ver los archivos copiados debes hacer la copia de seguridad primero o seleccionar la ruta destino.");
-            } else {
-                ArrayList<File> lista = new ArrayList<>();
-                lista = OperacionesFicheros.listarFicherosExtension(ruta, extensiones);
-                for (File file : lista) {
-                    if ((!file.isDirectory()) || (!file.exists())) {
-                        int indice = file.getName().indexOf(".");
-                        String extension = file.getName().toLowerCase().substring(indice + 1);
-                        Fichero f = new Fichero(file.getName(), extension, file.length());
-                        LogicaFichero.add(f);
-                    }
-                }
-                TablaFicheros t = new TablaFicheros(this, true);
-                t.setVisible(true);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButtonColorFondoVerCopiadosMouseClicked
-
     private void jButtonColorFondoEliminarCopiaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEliminarCopiaMouseClicked
         try {
             jLabelAvisos.setText("");
@@ -818,6 +797,32 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButtonColorFondoEliminarDuplicadosMouseClicked
+
+    private void jButtonColorFondoVerCopiadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoVerCopiadosMouseClicked
+        try {
+            jLabelAvisos.setText("");
+            File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
+            if (!ruta.exists()) {
+                jLabelAvisos.setForeground(Color.red);
+                jLabelAvisos.setText("Para ver los archivos copiados debes hacer la copia de seguridad primero o seleccionar la ruta destino.");
+            } else {
+                ArrayList<File> lista = new ArrayList<>();
+                lista = OperacionesFicheros.listarFicherosExtension(ruta, extensiones);
+                for (File file : lista) {
+                    if ((!file.isDirectory()) || (!file.exists())) {
+                        int indice = file.getName().indexOf(".");
+                        String extension = file.getName().toLowerCase().substring(indice + 1);
+                        Fichero f = new Fichero(file.getName(), extension, file.length());
+                        LogicaFichero.add(f);
+                    }
+                }
+                TablaFicheros t = new TablaFicheros(this, true);
+                t.setVisible(true);
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButtonColorFondoVerCopiadosMouseClicked
 
     private void jButtonColorFondoOrganizarBackUpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoOrganizarBackUpMouseClicked
         try {
@@ -858,12 +863,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButtonColorFondoEliminarCopiaOrdenadaMouseClicked
-
-    private void jButtonColorFondoInformacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoInformacionMouseClicked
-        jLabelAvisos.setText("");
-        PantallaInformación pantallaInformacion = new PantallaInformación(this, true);
-        pantallaInformacion.setVisible(true);
-    }//GEN-LAST:event_jButtonColorFondoInformacionMouseClicked
 
     private void jButtonColorFondoSeleccionarOrigenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoSeleccionarOrigenMouseClicked
         jLabelAvisos.setText("");
@@ -926,6 +925,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         });
     }
 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private GUI.JButtonColorFondo jButtonColorFondoDuplicados;
     private GUI.JButtonColorFondo jButtonColorFondoEliminarCopia;

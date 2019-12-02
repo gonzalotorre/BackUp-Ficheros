@@ -34,20 +34,12 @@ public class TablaFicherosDuplicados extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableFicherosDuplicados = new javax.swing.JTable();
         jLabelTitulo = new javax.swing.JLabel();
+        jButtonColorFondo1 = new GUI.JButtonColorFondo();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-
-        jButton1.setText("Cerrar");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jButton1, java.awt.BorderLayout.PAGE_END);
 
         jTableFicherosDuplicados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -70,13 +62,22 @@ public class TablaFicherosDuplicados extends javax.swing.JDialog {
         jLabelTitulo.setText("Lista Ficheros Duplicados");
         getContentPane().add(jLabelTitulo, java.awt.BorderLayout.PAGE_START);
 
+        jButtonColorFondo1.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-65536)));
+        jButtonColorFondo1.setText("Cerrar");
+        jButtonColorFondo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonColorFondo1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jButtonColorFondo1, java.awt.BorderLayout.PAGE_END);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void jButtonColorFondo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondo1MouseClicked
         limpiarTabla();
         dispose();
-    }//GEN-LAST:event_jButton1MouseClicked
+    }//GEN-LAST:event_jButtonColorFondo1MouseClicked
 
     /**
      * 
@@ -101,7 +102,7 @@ public class TablaFicherosDuplicados extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private GUI.JButtonColorFondo jButtonColorFondo1;
     private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTableFicherosDuplicados;

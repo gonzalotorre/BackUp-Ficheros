@@ -38,7 +38,7 @@ public class TablaFicheros extends javax.swing.JDialog {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableFicheros = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
-        jButtonCerrar = new javax.swing.JButton();
+        jButtonColorFondo1 = new GUI.JButtonColorFondo();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -63,23 +63,25 @@ public class TablaFicheros extends javax.swing.JDialog {
         jLabel1.setText("Lista de ficheros copiados");
         getContentPane().add(jLabel1, java.awt.BorderLayout.PAGE_START);
 
-        jButtonCerrar.setText("Cerrar");
-        jButtonCerrar.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButtonColorFondo1.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-65536)));
+        jButtonColorFondo1.setText("Cerrar");
+        jButtonColorFondo1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButtonCerrarMouseClicked(evt);
+                jButtonColorFondo1MouseClicked(evt);
             }
         });
-        getContentPane().add(jButtonCerrar, java.awt.BorderLayout.PAGE_END);
+        getContentPane().add(jButtonColorFondo1, java.awt.BorderLayout.PAGE_END);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonCerrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonCerrarMouseClicked
+    private void jButtonColorFondo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondo1MouseClicked
         limpiarTabla();
         dispose();
-    }//GEN-LAST:event_jButtonCerrarMouseClicked
+    }//GEN-LAST:event_jButtonColorFondo1MouseClicked
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonCerrar;
+    private GUI.JButtonColorFondo jButtonColorFondo1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTableFicheros;
