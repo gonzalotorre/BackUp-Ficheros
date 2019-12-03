@@ -61,29 +61,29 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelArchivosCopiar = new javax.swing.JLabel();
         jLabelDestino = new javax.swing.JLabel();
         jLabelTiposArchivo = new javax.swing.JLabel();
-        jCheckBoxJPG = new javax.swing.JCheckBox();
-        jCheckBoxGIF = new javax.swing.JCheckBox();
-        jCheckBoxPNG = new javax.swing.JCheckBox();
-        jCheckBoxAVI = new javax.swing.JCheckBox();
-        jCheckBoxMP4 = new javax.swing.JCheckBox();
-        jCheckBoxMP3 = new javax.swing.JCheckBox();
-        jCheckBoxWAV = new javax.swing.JCheckBox();
-        jCheckBoxPDF = new javax.swing.JCheckBox();
-        jCheckBoxTXT = new javax.swing.JCheckBox();
-        jCheckBoxDOC = new javax.swing.JCheckBox();
-        jCheckBoxTodos = new javax.swing.JCheckBox();
         jButtonColorFondoInformacion = new GUI.JButtonColorFondo();
         jButtonColorFondoSeleccionarOrigen = new GUI.JButtonColorFondo();
         jButtonColorFondoSeleccionarRutaDestino = new GUI.JButtonColorFondo();
+        jCheckBoxTodos = new GUI.JCheckBoxPropio();
+        jCheckBoxJPG = new GUI.JCheckBoxPropio();
+        jCheckBoxPNG = new GUI.JCheckBoxPropio();
+        jCheckBoxGIF = new GUI.JCheckBoxPropio();
+        jCheckBoxAVI = new GUI.JCheckBoxPropio();
+        jCheckBoxMP4 = new GUI.JCheckBoxPropio();
+        jCheckBoxMP3 = new GUI.JCheckBoxPropio();
+        jCheckBoxWAV = new GUI.JCheckBoxPropio();
+        jCheckBoxPDF = new GUI.JCheckBoxPropio();
+        jCheckBoxTXT = new GUI.JCheckBoxPropio();
+        jCheckBoxDOC = new GUI.JCheckBoxPropio();
         jLabelRutaOrigen = new javax.swing.JLabel();
         jLabelRutaDestino = new javax.swing.JLabel();
         jLabelEspacioLibreYDuplicados = new javax.swing.JLabel();
         jLabelTitulo = new javax.swing.JLabel();
         jPanelOtrasOpciones = new javax.swing.JPanel();
         jLabelOtrasOpciones = new javax.swing.JLabel();
+        jButtonColorFondoVerCopiados = new GUI.JButtonColorFondo();
         jButtonColorFondoEliminarCopia = new GUI.JButtonColorFondo();
         jButtonColorFondoEliminarDuplicados = new GUI.JButtonColorFondo();
-        jButtonColorFondoVerCopiados = new GUI.JButtonColorFondo();
         jButtonColorFondoOrganizarBackUp = new GUI.JButtonColorFondo();
         jButtonColorFondoEliminarCopiaOrdenada = new GUI.JButtonColorFondo();
         jLabelAvisos = new javax.swing.JLabel();
@@ -116,83 +116,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelTiposArchivo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelTiposArchivo.setText("Selecciona los archivos a copiar");
 
-        jCheckBoxJPG.setText("jpg");
-        jCheckBoxJPG.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxJPGMouseClicked(evt);
-            }
-        });
-
-        jCheckBoxGIF.setText("gif");
-        jCheckBoxGIF.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxGIFMouseClicked(evt);
-            }
-        });
-
-        jCheckBoxPNG.setText("png");
-        jCheckBoxPNG.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxPNGMouseClicked(evt);
-            }
-        });
-
-        jCheckBoxAVI.setText("avi");
-        jCheckBoxAVI.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxAVIMouseClicked(evt);
-            }
-        });
-
-        jCheckBoxMP4.setText("mp4");
-        jCheckBoxMP4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxMP4MouseClicked(evt);
-            }
-        });
-
-        jCheckBoxMP3.setText("mp3");
-        jCheckBoxMP3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxMP3MouseClicked(evt);
-            }
-        });
-
-        jCheckBoxWAV.setText("wav");
-        jCheckBoxWAV.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxWAVMouseClicked(evt);
-            }
-        });
-
-        jCheckBoxPDF.setText("pdf");
-        jCheckBoxPDF.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxPDFMouseClicked(evt);
-            }
-        });
-
-        jCheckBoxTXT.setText("txt");
-        jCheckBoxTXT.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxTXTMouseClicked(evt);
-            }
-        });
-
-        jCheckBoxDOC.setText("doc");
-        jCheckBoxDOC.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxDOCMouseClicked(evt);
-            }
-        });
-
-        jCheckBoxTodos.setText("Todos");
-        jCheckBoxTodos.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jCheckBoxTodosMouseClicked(evt);
-            }
-        });
-
         jButtonColorFondoInformacion.setText("Informacion");
         jButtonColorFondoInformacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -200,7 +123,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoSeleccionarOrigen.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoSeleccionarOrigen.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoSeleccionarOrigen.setText("Seleccionar");
         jButtonColorFondoSeleccionarOrigen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -208,11 +131,99 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoSeleccionarRutaDestino.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoSeleccionarRutaDestino.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoSeleccionarRutaDestino.setText("Seleccionar");
         jButtonColorFondoSeleccionarRutaDestino.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButtonColorFondoSeleccionarRutaDestinoMouseClicked(evt);
+            }
+        });
+
+        jCheckBoxTodos.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxTodos.setText("Todos");
+        jCheckBoxTodos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxTodosMouseClicked(evt);
+            }
+        });
+
+        jCheckBoxJPG.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxJPG.setText("jpg");
+        jCheckBoxJPG.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxJPGMouseClicked(evt);
+            }
+        });
+
+        jCheckBoxPNG.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxPNG.setText("png");
+        jCheckBoxPNG.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxPNGMouseClicked(evt);
+            }
+        });
+
+        jCheckBoxGIF.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxGIF.setText("gif");
+        jCheckBoxGIF.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxGIFMouseClicked(evt);
+            }
+        });
+
+        jCheckBoxAVI.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxAVI.setText("avi");
+        jCheckBoxAVI.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxAVIMouseClicked(evt);
+            }
+        });
+
+        jCheckBoxMP4.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxMP4.setText("mp4");
+        jCheckBoxMP4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxMP4MouseClicked(evt);
+            }
+        });
+
+        jCheckBoxMP3.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxMP3.setText("mp3");
+        jCheckBoxMP3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxMP3MouseClicked(evt);
+            }
+        });
+
+        jCheckBoxWAV.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxWAV.setText("wav");
+        jCheckBoxWAV.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxWAVMouseClicked(evt);
+            }
+        });
+
+        jCheckBoxPDF.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxPDF.setText("pdf");
+        jCheckBoxPDF.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxPDFMouseClicked(evt);
+            }
+        });
+
+        jCheckBoxTXT.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxTXT.setText("txt");
+        jCheckBoxTXT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxTXTMouseClicked(evt);
+            }
+        });
+
+        jCheckBoxDOC.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
+        jCheckBoxDOC.setText("doc");
+        jCheckBoxDOC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jCheckBoxDOCMouseClicked(evt);
             }
         });
 
@@ -224,51 +235,51 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
-                                .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckBoxJPG)
-                                    .addComponent(jCheckBoxMP3))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
-                                        .addComponent(jCheckBoxPNG)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jCheckBoxGIF))
-                                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
-                                        .addComponent(jCheckBoxWAV)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jCheckBoxPDF)))
-                                .addGap(28, 28, 28)
-                                .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
-                                        .addComponent(jCheckBoxAVI)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jCheckBoxMP4))
-                                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
-                                        .addComponent(jCheckBoxTXT)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jCheckBoxDOC))))
-                            .addComponent(jCheckBoxTodos))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
                         .addComponent(jLabelTiposArchivo)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
                         .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabelConfiguracion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabelDestino, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabelArchivosCopiar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabelArchivosCopiar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButtonColorFondoInformacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jButtonColorFondoSeleccionarOrigen, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
+                            .addComponent(jButtonColorFondoSeleccionarRutaDestino, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())
+                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBoxTodos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
                                 .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButtonColorFondoSeleccionarOrigen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButtonColorFondoSeleccionarRutaDestino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap())))
+                                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
+                                        .addComponent(jCheckBoxJPG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(22, 22, 22))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelConfiguracionLayout.createSequentialGroup()
+                                        .addComponent(jCheckBoxMP3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)))
+                                .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
+                                        .addComponent(jCheckBoxPNG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jCheckBoxGIF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
+                                        .addComponent(jCheckBoxWAV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jCheckBoxPDF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(28, 28, 28)
+                                .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
+                                        .addComponent(jCheckBoxAVI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jCheckBoxMP4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
+                                        .addComponent(jCheckBoxTXT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jCheckBoxDOC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanelConfiguracionLayout.setVerticalGroup(
             jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,20 +300,20 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                 .addComponent(jLabelTiposArchivo)
                 .addGap(13, 13, 13)
                 .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBoxJPG)
-                    .addComponent(jCheckBoxPNG)
-                    .addComponent(jCheckBoxGIF)
-                    .addComponent(jCheckBoxAVI)
-                    .addComponent(jCheckBoxMP4))
+                    .addComponent(jCheckBoxJPG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxPNG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxGIF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxAVI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxMP4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBoxMP3)
-                    .addComponent(jCheckBoxWAV)
-                    .addComponent(jCheckBoxPDF)
-                    .addComponent(jCheckBoxTXT)
-                    .addComponent(jCheckBoxDOC))
+                    .addComponent(jCheckBoxMP3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxWAV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxPDF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxTXT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCheckBoxDOC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBoxTodos)
+                .addComponent(jCheckBoxTodos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -324,23 +335,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelOtrasOpciones.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelOtrasOpciones.setText("Otras Opciones");
 
-        jButtonColorFondoEliminarCopia.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
-        jButtonColorFondoEliminarCopia.setText("Eliminar copia");
-        jButtonColorFondoEliminarCopia.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButtonColorFondoEliminarCopiaMouseClicked(evt);
-            }
-        });
-
-        jButtonColorFondoEliminarDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
-        jButtonColorFondoEliminarDuplicados.setText("Eliminar duplicados");
-        jButtonColorFondoEliminarDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButtonColorFondoEliminarDuplicadosMouseClicked(evt);
-            }
-        });
-
-        jButtonColorFondoVerCopiados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoVerCopiados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoVerCopiados.setText("Ver archivos copiados");
         jButtonColorFondoVerCopiados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -348,7 +343,23 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoOrganizarBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoEliminarCopia.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
+        jButtonColorFondoEliminarCopia.setText("Eliminar copia");
+        jButtonColorFondoEliminarCopia.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonColorFondoEliminarCopiaMouseClicked(evt);
+            }
+        });
+
+        jButtonColorFondoEliminarDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
+        jButtonColorFondoEliminarDuplicados.setText("Eliminar duplicados");
+        jButtonColorFondoEliminarDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonColorFondoEliminarDuplicadosMouseClicked(evt);
+            }
+        });
+
+        jButtonColorFondoOrganizarBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoOrganizarBackUp.setText("Organizar BackUp");
         jButtonColorFondoOrganizarBackUp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -356,7 +367,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoEliminarCopiaOrdenada.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoEliminarCopiaOrdenada.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoEliminarCopiaOrdenada.setText("Eliminar copia ordenada");
         jButtonColorFondoEliminarCopiaOrdenada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -375,17 +386,17 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                     .addComponent(jButtonColorFondoEliminarCopia, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonColorFondoEliminarDuplicados, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonColorFondoVerCopiados, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonColorFondoOrganizarBackUp, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonColorFondoEliminarCopiaOrdenada, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButtonColorFondoVerCopiados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonColorFondoOrganizarBackUp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonColorFondoEliminarCopiaOrdenada, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelOtrasOpcionesLayout.setVerticalGroup(
             jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelOtrasOpcionesLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addContainerGap()
+                .addGroup(jPanelOtrasOpcionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabelOtrasOpciones)
                     .addComponent(jButtonColorFondoVerCopiados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -402,7 +413,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelAvisos.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelAvisos.setText(" ");
 
-        jButtonColorFondoHacerBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoHacerBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoHacerBackUp.setText("Hacer BackUp");
         jButtonColorFondoHacerBackUp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -410,7 +421,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoEspacioLibre.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoEspacioLibre.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoEspacioLibre.setText("Espacio libre en disco");
         jButtonColorFondoEspacioLibre.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -418,7 +429,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoDuplicados.setText("Archivos duplicados");
         jButtonColorFondoDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -426,7 +437,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoVerDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-4096)));
+        jButtonColorFondoVerDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoVerDuplicados.setText("Ver duplicados");
         jButtonColorFondoVerDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -515,6 +526,227 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonColorFondoInformacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoInformacionMouseClicked
+        jLabelAvisos.setText("");
+        PantallaInformación pantallaInformacion = new PantallaInformación(this, true);
+        pantallaInformacion.setVisible(true);
+    }//GEN-LAST:event_jButtonColorFondoInformacionMouseClicked
+
+    private void jButtonColorFondoHacerBackUpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoHacerBackUpMouseClicked
+        try {
+            jLabelAvisos.setText("");
+            if ("".equals(jLabelRutaDestino.getText())) {
+                jLabelAvisos.setForeground(Color.red);
+                jLabelAvisos.setText("Por favor introduce las rutas de origen y destino.");
+            } else {
+                File rutaOrigen = new File(jLabelRutaOrigen.getText());
+                File rutaDestino = new File(jLabelRutaDestino.getText() + "\\BackUp");
+                ArrayList<File> numFicheros = new ArrayList<>();
+                OperacionesFicheros operaciones = new OperacionesFicheros(this);
+
+                numFicheros = OperacionesFicheros.listarFicherosExtension(rutaOrigen, extensiones);
+                jProgressBarFicherosCopiados.setMaximum(numFicheros.size());
+                Thread queryThread = new Thread() {
+                    @Override
+                    public void run() {
+                        try {
+                            operaciones.copiarConFiltro(rutaOrigen, rutaDestino, extensiones, 1);
+                            OperacionesFicheros.eliminaCarpetasVacias(rutaDestino);
+                            jLabelAvisos.setForeground(Color.green);
+                            jLabelAvisos.setText("Se ha hecho la copia de seguridad.");
+                        } catch (IOException ex) {
+                            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                    }
+                };
+                queryThread.start();
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButtonColorFondoHacerBackUpMouseClicked
+
+    private void jButtonColorFondoEspacioLibreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEspacioLibreMouseClicked
+        jLabelAvisos.setText("");
+        if ("".equals(jLabelRutaDestino.getText())) {
+            jLabelAvisos.setForeground(Color.red);
+            jLabelAvisos.setText("Por favor introduce la ruta del disco (destino) para saber el espacio libre.");
+        } else {
+            File disco = new File(jLabelRutaDestino.getText());
+            long espacio = OperacionesFicheros.espacioLibre(disco);
+            jLabelEspacioLibreYDuplicados.setText("Quedan " + espacio + "Gb libres");
+        }
+    }//GEN-LAST:event_jButtonColorFondoEspacioLibreMouseClicked
+
+    private void jButtonColorFondoDuplicadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoDuplicadosMouseClicked
+        try {
+            jLabelAvisos.setText("");
+            ArrayList<File> listaDuplicados = new ArrayList<>();
+            if ("".equals(jLabelRutaDestino.getText())) {
+                jLabelAvisos.setForeground(Color.red);
+                jLabelAvisos.setText("Debes hacer primero el backup para comprobar si hay arcivos duplicados o seleccionar la ruta destino.");
+            } else {
+                File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
+                //Faltaría comprobar si existe o no la carpeta BackUp para comprobar los duplicaods
+                listaDuplicados = OperacionesFicheros.buscarDuplicados(ruta);
+                jLabelEspacioLibreYDuplicados.setText("Encontrados " + listaDuplicados.size() + " duplicados");
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButtonColorFondoDuplicadosMouseClicked
+
+    private void jButtonColorFondoVerDuplicadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoVerDuplicadosMouseClicked
+        try {
+            jLabelAvisos.setText("");
+            File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
+            if (!ruta.exists()) {
+                jLabelAvisos.setForeground(Color.red);
+                jLabelAvisos.setText("Para ver los archivos duplicados debes hacer la copia de seguridad primero o seleccionar la ruta destino.");
+            } else {
+                ArrayList<File> listaDuplicados = new ArrayList<>();
+                listaDuplicados = OperacionesFicheros.buscarDuplicados(ruta);
+                for (File file : listaDuplicados) {
+                    int indice = file.getName().indexOf(".");
+                    String extension = file.getName().toLowerCase().substring(indice + 1);
+                    Fichero f = new Fichero(file.getName(), extension, file.length());
+                    LogicaFichero.add(f);
+                }
+                TablaFicherosDuplicados t = new TablaFicherosDuplicados(this, true);
+                t.setVisible(true);
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButtonColorFondoVerDuplicadosMouseClicked
+
+    private void jButtonColorFondoVerCopiadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoVerCopiadosMouseClicked
+        try {
+            jLabelAvisos.setText("");
+            File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
+            if (!ruta.exists()) {
+                jLabelAvisos.setForeground(Color.red);
+                jLabelAvisos.setText("Para ver los archivos copiados debes hacer la copia de seguridad primero o seleccionar la ruta destino.");
+            } else {
+                ArrayList<File> lista = new ArrayList<>();
+                lista = OperacionesFicheros.listarFicherosExtension(ruta, extensiones);
+                for (File file : lista) {
+                    if ((!file.isDirectory()) || (!file.exists())) {
+                        int indice = file.getName().indexOf(".");
+                        String extension = file.getName().toLowerCase().substring(indice + 1);
+                        Fichero f = new Fichero(file.getName(), extension, file.length());
+                        LogicaFichero.add(f);
+                    }
+                }
+                TablaFicheros t = new TablaFicheros(this, true);
+                t.setVisible(true);
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButtonColorFondoVerCopiadosMouseClicked
+
+    private void jButtonColorFondoEliminarCopiaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEliminarCopiaMouseClicked
+        try {
+            jLabelAvisos.setText("");
+            if ("".equals(jLabelRutaDestino.getText())) {
+                jLabelAvisos.setForeground(Color.red);
+                jLabelAvisos.setText("Por favor introduce la ruta del directorio a eliminar (destino).");
+            } else {
+                File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
+                OperacionesFicheros.eliminarCopia(ruta);
+                jLabelAvisos.setForeground(Color.green);
+                jLabelAvisos.setText("Se ha borrado la copia de seguirad.");
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButtonColorFondoEliminarCopiaMouseClicked
+
+    private void jButtonColorFondoEliminarDuplicadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEliminarDuplicadosMouseClicked
+        try {
+            jLabelAvisos.setText("");
+            File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
+            if (!ruta.exists()) {
+                jLabelAvisos.setForeground(Color.red);
+                jLabelAvisos.setText("Para borrar duplicados debes hacer primero copia de seguridad primero o seleccionar la ruta destino.");
+            } else {
+                OperacionesFicheros.borrarDuplicados(ruta);
+                OperacionesFicheros.eliminaCarpetasVacias(ruta);
+                jLabelAvisos.setForeground(Color.green);
+                jLabelAvisos.setText("Se han borrado los archivos duplicados");
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButtonColorFondoEliminarDuplicadosMouseClicked
+
+    private void jButtonColorFondoOrganizarBackUpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoOrganizarBackUpMouseClicked
+        try {
+            jLabelAvisos.setText("");
+            if ("".equals(jLabelRutaDestino.getText())) {
+                jLabelAvisos.setForeground(Color.red);
+                jLabelAvisos.setText("Debes hacer primero la copia de seguridad.");
+            } else {
+                File rutaBackUp = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
+                /*if (!(rutaBackUp.length() == 0)) {*/
+                //Está mal subido y mal hecho esta comprobación, ya que el length de un direcctorio da 0
+                OperacionesFicheros.oredenarBackUp(rutaBackUp, jLabelRutaDestino.getText() + File.separator + "BackUp");
+                jLabelAvisos.setForeground(Color.green);
+                jLabelAvisos.setText("Se ha ordenado la copia de seguirad en una nueva carpeta.");
+                /*} else {
+                    jLabelAvisos.setForeground(Color.red);
+                    jLabelAvisos.setText("No se pudo organizar la copia de seguridad, la carpeta BackUp está vacía.");
+                }*/
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButtonColorFondoOrganizarBackUpMouseClicked
+
+    private void jButtonColorFondoEliminarCopiaOrdenadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEliminarCopiaOrdenadaMouseClicked
+        try {
+            jLabelAvisos.setText("");
+            File copiaOrdenada = new File(jLabelRutaDestino.getText() + File.separator + "BackUpOrdenado");
+            if (!copiaOrdenada.exists()) {
+                jLabelAvisos.setForeground(Color.red);
+                jLabelAvisos.setText("La copia ordenada no existe o no está hecha, por favor introduce la ruta correcta o haz la copia ordenada.");
+            } else {
+                OperacionesFicheros.eliminarCopia(copiaOrdenada);
+                jLabelAvisos.setForeground(Color.green);
+                jLabelAvisos.setText("Se ha borrado la copia de seguirad ordenada.");
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButtonColorFondoEliminarCopiaOrdenadaMouseClicked
+
+    private void jButtonColorFondoSeleccionarOrigenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoSeleccionarOrigenMouseClicked
+        jLabelAvisos.setText("");
+        JFileChooser buscador = new JFileChooser();
+        buscador.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        int result = buscador.showOpenDialog(jLabelRutaOrigen);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File fichero = buscador.getSelectedFile();
+            jLabelRutaOrigen.setText(fichero.getAbsolutePath());
+        } else if (result == JFileChooser.CANCEL_OPTION) {
+            jLabelRutaOrigen.setText("No se seleccionó ningún directorio/archivo.");
+        }
+    }//GEN-LAST:event_jButtonColorFondoSeleccionarOrigenMouseClicked
+
+    private void jButtonColorFondoSeleccionarRutaDestinoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoSeleccionarRutaDestinoMouseClicked
+        jLabelAvisos.setText("");
+        JFileChooser buscador = new JFileChooser();
+        buscador.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        int result = buscador.showOpenDialog(this);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File fichero = buscador.getSelectedFile();
+            jLabelRutaDestino.setText(fichero.getAbsolutePath());
+        } else if (result == JFileChooser.CANCEL_OPTION) {
+            jLabelRutaDestino.setText("No se seleccionó ningún directorio/archivo.");
+        }
+    }//GEN-LAST:event_jButtonColorFondoSeleccionarRutaDestinoMouseClicked
 
     private void jCheckBoxTodosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxTodosMouseClicked
         jLabelAvisos.setText("");
@@ -669,227 +901,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jCheckBoxDOCMouseClicked
 
-    private void jButtonColorFondoInformacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoInformacionMouseClicked
-        jLabelAvisos.setText("");
-        PantallaInformación pantallaInformacion = new PantallaInformación(this, true);
-        pantallaInformacion.setVisible(true);
-    }//GEN-LAST:event_jButtonColorFondoInformacionMouseClicked
-
-    private void jButtonColorFondoHacerBackUpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoHacerBackUpMouseClicked
-        try {
-            jLabelAvisos.setText("");
-            if ("".equals(jLabelRutaDestino.getText())) {
-                jLabelAvisos.setForeground(Color.red);
-                jLabelAvisos.setText("Por favor introduce las rutas de origen y destino.");
-            } else {
-                File rutaOrigen = new File(jLabelRutaOrigen.getText());
-                File rutaDestino = new File(jLabelRutaDestino.getText() + "\\BackUp");
-                ArrayList<File> numFicheros = new ArrayList<>();
-                OperacionesFicheros operaciones = new OperacionesFicheros(this);
-
-                numFicheros = OperacionesFicheros.listarFicherosExtension(rutaOrigen, extensiones);
-                jProgressBarFicherosCopiados.setMaximum(numFicheros.size());
-                Thread queryThread = new Thread() {
-                    @Override
-                    public void run() {
-                        try {
-                            operaciones.copiarConFiltro(rutaOrigen, rutaDestino, extensiones, 1);
-                            OperacionesFicheros.eliminaCarpetasVacias(rutaDestino);
-                            jLabelAvisos.setForeground(Color.green);
-                            jLabelAvisos.setText("Se ha hecho la copia de seguridad.");
-                        } catch (IOException ex) {
-                            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-                        }
-                    }
-                };
-                queryThread.start();
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButtonColorFondoHacerBackUpMouseClicked
-
-    private void jButtonColorFondoEspacioLibreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEspacioLibreMouseClicked
-        jLabelAvisos.setText("");
-        if ("".equals(jLabelRutaDestino.getText())) {
-            jLabelAvisos.setForeground(Color.red);
-            jLabelAvisos.setText("Por favor introduce la ruta del disco (destino) para saber el espacio libre.");
-        } else {
-            File disco = new File(jLabelRutaDestino.getText());
-            long espacio = OperacionesFicheros.espacioLibre(disco);
-            jLabelEspacioLibreYDuplicados.setText("Quedan " + espacio + "Gb libres");
-        }
-    }//GEN-LAST:event_jButtonColorFondoEspacioLibreMouseClicked
-
-    private void jButtonColorFondoDuplicadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoDuplicadosMouseClicked
-        try {
-            jLabelAvisos.setText("");
-            ArrayList<File> listaDuplicados = new ArrayList<>();
-            if ("".equals(jLabelRutaDestino.getText())) {
-                jLabelAvisos.setForeground(Color.red);
-                jLabelAvisos.setText("Debes hacer primero el backup para comprobar si hay arcivos duplicados o seleccionar la ruta destino.");
-            } else {
-                File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
-                //Faltaría comprobar si existe o no la carpeta BackUp para comprobar los duplicaods
-                listaDuplicados = OperacionesFicheros.buscarDuplicados(ruta);
-                jLabelEspacioLibreYDuplicados.setText("Encontrados " + listaDuplicados.size() + " duplicados");
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButtonColorFondoDuplicadosMouseClicked
-
-    private void jButtonColorFondoVerDuplicadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoVerDuplicadosMouseClicked
-        try {
-            jLabelAvisos.setText("");
-            File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
-            if (!ruta.exists()) {
-                jLabelAvisos.setForeground(Color.red);
-                jLabelAvisos.setText("Para ver los archivos duplicados debes hacer la copia de seguridad primero o seleccionar la ruta destino.");
-            } else {
-                ArrayList<File> listaDuplicados = new ArrayList<>();
-                listaDuplicados = OperacionesFicheros.buscarDuplicados(ruta);
-                for (File file : listaDuplicados) {
-                    int indice = file.getName().indexOf(".");
-                    String extension = file.getName().toLowerCase().substring(indice + 1);
-                    Fichero f = new Fichero(file.getName(), extension, file.length());
-                    LogicaFichero.add(f);
-                }
-                TablaFicherosDuplicados t = new TablaFicherosDuplicados(this, true);
-                t.setVisible(true);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButtonColorFondoVerDuplicadosMouseClicked
-
-    private void jButtonColorFondoEliminarCopiaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEliminarCopiaMouseClicked
-        try {
-            jLabelAvisos.setText("");
-            if ("".equals(jLabelRutaDestino.getText())) {
-                jLabelAvisos.setForeground(Color.red);
-                jLabelAvisos.setText("Por favor introduce la ruta del directorio a eliminar (destino).");
-            } else {
-                File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
-                OperacionesFicheros.eliminarCopia(ruta);
-                jLabelAvisos.setForeground(Color.green);
-                jLabelAvisos.setText("Se ha borrado la copia de seguirad.");
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButtonColorFondoEliminarCopiaMouseClicked
-
-    private void jButtonColorFondoEliminarDuplicadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEliminarDuplicadosMouseClicked
-        try {
-            jLabelAvisos.setText("");
-            File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
-            if (!ruta.exists()) {
-                jLabelAvisos.setForeground(Color.red);
-                jLabelAvisos.setText("Para borrar duplicados debes hacer primero copia de seguridad primero o seleccionar la ruta destino.");
-            } else {
-                OperacionesFicheros.borrarDuplicados(ruta);
-                OperacionesFicheros.eliminaCarpetasVacias(ruta);
-                jLabelAvisos.setForeground(Color.green);
-                jLabelAvisos.setText("Se han borrado los archivos duplicados");
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButtonColorFondoEliminarDuplicadosMouseClicked
-
-    private void jButtonColorFondoVerCopiadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoVerCopiadosMouseClicked
-        try {
-            jLabelAvisos.setText("");
-            File ruta = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
-            if (!ruta.exists()) {
-                jLabelAvisos.setForeground(Color.red);
-                jLabelAvisos.setText("Para ver los archivos copiados debes hacer la copia de seguridad primero o seleccionar la ruta destino.");
-            } else {
-                ArrayList<File> lista = new ArrayList<>();
-                lista = OperacionesFicheros.listarFicherosExtension(ruta, extensiones);
-                for (File file : lista) {
-                    if ((!file.isDirectory()) || (!file.exists())) {
-                        int indice = file.getName().indexOf(".");
-                        String extension = file.getName().toLowerCase().substring(indice + 1);
-                        Fichero f = new Fichero(file.getName(), extension, file.length());
-                        LogicaFichero.add(f);
-                    }
-                }
-                TablaFicheros t = new TablaFicheros(this, true);
-                t.setVisible(true);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButtonColorFondoVerCopiadosMouseClicked
-
-    private void jButtonColorFondoOrganizarBackUpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoOrganizarBackUpMouseClicked
-        try {
-            jLabelAvisos.setText("");
-            if ("".equals(jLabelRutaDestino.getText())) {
-                jLabelAvisos.setForeground(Color.red);
-                jLabelAvisos.setText("Debes hacer primero la copia de seguridad.");
-            } else {
-                File rutaBackUp = new File(jLabelRutaDestino.getText() + File.separator + "BackUp");
-                /*if (!(rutaBackUp.length() == 0)) {*/
-                //Está mal subido y mal hecho esta comprobación, ya que el length de un direcctorio da 0
-                OperacionesFicheros.oredenarBackUp(rutaBackUp, jLabelRutaDestino.getText() + File.separator + "BackUp");
-                jLabelAvisos.setForeground(Color.green);
-                jLabelAvisos.setText("Se ha ordenado la copia de seguirad en una nueva carpeta.");
-                /*} else {
-                    jLabelAvisos.setForeground(Color.red);
-                    jLabelAvisos.setText("No se pudo organizar la copia de seguridad, la carpeta BackUp está vacía.");
-                }*/
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButtonColorFondoOrganizarBackUpMouseClicked
-
-    private void jButtonColorFondoEliminarCopiaOrdenadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoEliminarCopiaOrdenadaMouseClicked
-        try {
-            jLabelAvisos.setText("");
-            File copiaOrdenada = new File(jLabelRutaDestino.getText() + File.separator + "BackUpOrdenado");
-            if (!copiaOrdenada.exists()) {
-                jLabelAvisos.setForeground(Color.red);
-                jLabelAvisos.setText("La copia ordenada no existe o no está hecha, por favor introduce la ruta correcta o haz la copia ordenada.");
-            } else {
-                OperacionesFicheros.eliminarCopia(copiaOrdenada);
-                jLabelAvisos.setForeground(Color.green);
-                jLabelAvisos.setText("Se ha borrado la copia de seguirad ordenada.");
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jButtonColorFondoEliminarCopiaOrdenadaMouseClicked
-
-    private void jButtonColorFondoSeleccionarOrigenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoSeleccionarOrigenMouseClicked
-        jLabelAvisos.setText("");
-        JFileChooser buscador = new JFileChooser();
-        buscador.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
-        int result = buscador.showOpenDialog(jLabelRutaOrigen);
-        if (result == JFileChooser.APPROVE_OPTION) {
-            File fichero = buscador.getSelectedFile();
-            jLabelRutaOrigen.setText(fichero.getAbsolutePath());
-        } else if (result == JFileChooser.CANCEL_OPTION) {
-            jLabelRutaOrigen.setText("No se seleccionó ningún directorio/archivo.");
-        }
-    }//GEN-LAST:event_jButtonColorFondoSeleccionarOrigenMouseClicked
-
-    private void jButtonColorFondoSeleccionarRutaDestinoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoSeleccionarRutaDestinoMouseClicked
-        jLabelAvisos.setText("");
-        JFileChooser buscador = new JFileChooser();
-        buscador.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        int result = buscador.showOpenDialog(this);
-        if (result == JFileChooser.APPROVE_OPTION) {
-            File fichero = buscador.getSelectedFile();
-            jLabelRutaDestino.setText(fichero.getAbsolutePath());
-        } else if (result == JFileChooser.CANCEL_OPTION) {
-            jLabelRutaDestino.setText("No se seleccionó ningún directorio/archivo.");
-        }
-    }//GEN-LAST:event_jButtonColorFondoSeleccionarRutaDestinoMouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -925,7 +936,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         });
     }
 
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private GUI.JButtonColorFondo jButtonColorFondoDuplicados;
     private GUI.JButtonColorFondo jButtonColorFondoEliminarCopia;
@@ -939,17 +950,17 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     private GUI.JButtonColorFondo jButtonColorFondoSeleccionarRutaDestino;
     private GUI.JButtonColorFondo jButtonColorFondoVerCopiados;
     private GUI.JButtonColorFondo jButtonColorFondoVerDuplicados;
-    private javax.swing.JCheckBox jCheckBoxAVI;
-    private javax.swing.JCheckBox jCheckBoxDOC;
-    private javax.swing.JCheckBox jCheckBoxGIF;
-    private javax.swing.JCheckBox jCheckBoxJPG;
-    private javax.swing.JCheckBox jCheckBoxMP3;
-    private javax.swing.JCheckBox jCheckBoxMP4;
-    private javax.swing.JCheckBox jCheckBoxPDF;
-    private javax.swing.JCheckBox jCheckBoxPNG;
-    private javax.swing.JCheckBox jCheckBoxTXT;
-    private javax.swing.JCheckBox jCheckBoxTodos;
-    private javax.swing.JCheckBox jCheckBoxWAV;
+    private GUI.JCheckBoxPropio jCheckBoxAVI;
+    private GUI.JCheckBoxPropio jCheckBoxDOC;
+    private GUI.JCheckBoxPropio jCheckBoxGIF;
+    private GUI.JCheckBoxPropio jCheckBoxJPG;
+    private GUI.JCheckBoxPropio jCheckBoxMP3;
+    private GUI.JCheckBoxPropio jCheckBoxMP4;
+    private GUI.JCheckBoxPropio jCheckBoxPDF;
+    private GUI.JCheckBoxPropio jCheckBoxPNG;
+    private GUI.JCheckBoxPropio jCheckBoxTXT;
+    private GUI.JCheckBoxPropio jCheckBoxTodos;
+    private GUI.JCheckBoxPropio jCheckBoxWAV;
     private javax.swing.JLabel jLabelArchivosCopiar;
     private javax.swing.JLabel jLabelAvisos;
     private javax.swing.JLabel jLabelConfiguracion;

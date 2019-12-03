@@ -152,14 +152,38 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
+                          <Component id="jLabelTiposArchivo" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jLabelConfiguracion" max="32767" attributes="0"/>
+                              <Component id="jLabelDestino" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabelArchivosCopiar" alignment="0" pref="224" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jButtonColorFondoInformacion" alignment="1" pref="0" max="32767" attributes="0"/>
+                              <Component id="jButtonColorFondoSeleccionarOrigen" alignment="1" pref="88" max="32767" attributes="0"/>
+                              <Component id="jButtonColorFondoSeleccionarRutaDestino" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jCheckBoxTodos" min="-2" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jCheckBoxJPG" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jCheckBoxMP3" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jCheckBoxJPG" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="jCheckBoxMP3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jCheckBoxPNG" min="-2" max="-2" attributes="0"/>
@@ -186,32 +210,8 @@
                                       </Group>
                                   </Group>
                               </Group>
-                              <Component id="jCheckBoxTodos" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="jLabelTiposArchivo" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jLabelConfiguracion" max="32767" attributes="0"/>
-                              <Component id="jLabelDestino" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jLabelArchivosCopiar" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jButtonColorFondoInformacion" alignment="1" pref="0" max="32767" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jButtonColorFondoSeleccionarOrigen" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButtonColorFondoSeleccionarRutaDestino" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -255,7 +255,7 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jCheckBoxTodos" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -293,94 +293,6 @@
             <Property name="text" type="java.lang.String" value="Selecciona los archivos a copiar"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxJPG">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jpg"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxJPGMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxGIF">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="gif"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxGIFMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxPNG">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="png"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxPNGMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxAVI">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="avi"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxAVIMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxMP4">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="mp4"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxMP4MouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxMP3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="mp3"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxMP3MouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxWAV">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="wav"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxWAVMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxPDF">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="pdf"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxPDFMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxTXT">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="txt"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxTXTMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxDOC">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="doc"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxDOCMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBoxTodos">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Todos"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxTodosMouseClicked"/>
-          </Events>
-        </Component>
         <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoInformacion">
           <Properties>
             <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
@@ -395,7 +307,7 @@
         <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoSeleccionarOrigen">
           <Properties>
             <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Seleccionar"/>
           </Properties>
@@ -406,12 +318,133 @@
         <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoSeleccionarRutaDestino">
           <Properties>
             <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Seleccionar"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoSeleccionarRutaDestinoMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxTodos">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Todos"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxTodosMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxJPG">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jpg"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxJPGMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxPNG">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="png"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxPNGMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxGIF">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="gif"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxGIFMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxAVI">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="avi"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxAVIMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxMP4">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="mp4"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxMP4MouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxMP3">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="mp3"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxMP3MouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxWAV">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="wav"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxWAVMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxPDF">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="pdf"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxPDFMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxTXT">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="txt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxTXTMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="GUI.JCheckBoxPropio" name="jCheckBoxDOC">
+          <Properties>
+            <Property name="propiedades" type="GUI.PropiedadesCheckBox" editor="GUI.PropiedadesJCheckBoxPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,23,71,85,73,46,80,114,111,112,105,101,100,97,100,101,115,67,104,101,99,107,66,111,120,14,110,92,-106,22,-54,91,-63,2,0,2,76,0,10,99,111,108,111,114,84,101,120,116,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,76,0,10,116,105,112,111,70,117,101,110,116,101,116,0,15,76,106,97,118,97,47,97,119,116,47,70,111,110,116,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,6,120,112,0,0,0,0,-1,0,-117,-1,112,112,112,115,114,0,13,106,97,118,97,46,97,119,116,46,70,111,110,116,-59,-95,53,-26,-52,-34,86,115,3,0,6,73,0,25,102,111,110,116,83,101,114,105,97,108,105,122,101,100,68,97,116,97,86,101,114,115,105,111,110,70,0,9,112,111,105,110,116,83,105,122,101,73,0,4,115,105,122,101,73,0,5,115,116,121,108,101,76,0,20,102,82,101,113,117,101,115,116,101,100,65,116,116,114,105,98,117,116,101,115,116,0,21,76,106,97,118,97,47,117,116,105,108,47,72,97,115,104,116,97,98,108,101,59,76,0,4,110,97,109,101,116,0,18,76,106,97,118,97,47,108,97,110,103,47,83,116,114,105,110,103,59,120,112,0,0,0,1,65,48,0,0,0,0,0,11,0,0,0,1,112,116,0,6,84,97,104,111,109,97,120"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="doc"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jCheckBoxDOCMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>
@@ -478,10 +511,10 @@
                       <Component id="jButtonColorFondoEliminarDuplicados" min="-2" pref="150" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButtonColorFondoVerCopiados" min="-2" pref="150" max="-2" attributes="0"/>
-                      <Component id="jButtonColorFondoOrganizarBackUp" min="-2" pref="150" max="-2" attributes="0"/>
-                      <Component id="jButtonColorFondoEliminarCopiaOrdenada" min="-2" pref="150" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jButtonColorFondoVerCopiados" max="32767" attributes="0"/>
+                      <Component id="jButtonColorFondoOrganizarBackUp" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jButtonColorFondoEliminarCopiaOrdenada" pref="150" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -490,10 +523,10 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabelOtrasOpciones" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButtonColorFondoVerCopiados" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jLabelOtrasOpciones" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonColorFondoVerCopiados" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -520,10 +553,21 @@
             <Property name="text" type="java.lang.String" value="Otras Opciones"/>
           </Properties>
         </Component>
+        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoVerCopiados">
+          <Properties>
+            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ver archivos copiados"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoVerCopiadosMouseClicked"/>
+          </Events>
+        </Component>
         <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoEliminarCopia">
           <Properties>
             <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Eliminar copia"/>
           </Properties>
@@ -534,7 +578,7 @@
         <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoEliminarDuplicados">
           <Properties>
             <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Eliminar duplicados"/>
           </Properties>
@@ -542,21 +586,10 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoEliminarDuplicadosMouseClicked"/>
           </Events>
         </Component>
-        <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoVerCopiados">
-          <Properties>
-            <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Ver archivos copiados"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButtonColorFondoVerCopiadosMouseClicked"/>
-          </Events>
-        </Component>
         <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoOrganizarBackUp">
           <Properties>
             <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Organizar BackUp"/>
           </Properties>
@@ -567,7 +600,7 @@
         <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoEliminarCopiaOrdenada">
           <Properties>
             <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+              <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Eliminar copia ordenada"/>
           </Properties>
@@ -592,7 +625,7 @@
     <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoHacerBackUp">
       <Properties>
         <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Hacer BackUp"/>
       </Properties>
@@ -603,7 +636,7 @@
     <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoEspacioLibre">
       <Properties>
         <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Espacio libre en disco"/>
       </Properties>
@@ -614,7 +647,7 @@
     <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoDuplicados">
       <Properties>
         <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Archivos duplicados"/>
       </Properties>
@@ -625,7 +658,7 @@
     <Component class="GUI.JButtonColorFondo" name="jButtonColorFondoVerDuplicados">
       <Properties>
         <Property name="colorBoton" type="GUI.ColorBoton" editor="GUI.ColorBotonPropertyEditorSupport">
-          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,-1,-16,0,112,112,112"/>
+          <SerializedValue value="-84,-19,0,5,115,114,0,14,71,85,73,46,67,111,108,111,114,66,111,116,111,110,-102,-126,-63,100,60,-33,-83,-104,2,0,1,76,0,10,99,111,108,111,114,70,111,110,100,111,116,0,16,76,106,97,118,97,47,97,119,116,47,67,111,108,111,114,59,120,112,115,114,0,14,106,97,118,97,46,97,119,116,46,67,111,108,111,114,1,-91,23,-125,16,-113,51,117,2,0,5,70,0,6,102,97,108,112,104,97,73,0,5,118,97,108,117,101,76,0,2,99,115,116,0,27,76,106,97,118,97,47,97,119,116,47,99,111,108,111,114,47,67,111,108,111,114,83,112,97,99,101,59,91,0,9,102,114,103,98,118,97,108,117,101,116,0,2,91,70,91,0,6,102,118,97,108,117,101,113,0,126,0,5,120,112,0,0,0,0,-1,0,-117,-1,112,112,112"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Ver duplicados"/>
       </Properties>
