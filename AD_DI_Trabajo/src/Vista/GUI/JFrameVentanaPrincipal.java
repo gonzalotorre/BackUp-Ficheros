@@ -7,10 +7,15 @@ import java.awt.Color;
 import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.help.HelpBroker;
+import javax.help.HelpSet;
+import javax.help.HelpSetException;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 
@@ -32,6 +37,21 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         //Para cambiar el icono de la aplicación.
         Image icono = new ImageIcon("images" + File.separator + "icono.gif").getImage();
         setIconImage(icono);
+        try {
+
+            File fichero = new File("help" + File.separator + "help_set.hs");
+            URL hsURL = fichero.toURI().toURL();
+            // Crea el HelpSet y el HelpBroker
+            HelpSet helpset = new HelpSet(getClass().getClassLoader(), hsURL);
+            HelpBroker hb = helpset.createHelpBroker();
+            // Pone ayuda a item de menu al pulsarlo.
+            hb.enableHelpOnButton(ayudaMenuItem, "JFrameVentanaPrincipal", helpset);
+            hb.enableHelpKey(getRootPane(), "JFrameVentanaPrincipal", helpset);
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (HelpSetException ex) {
+            Logger.getLogger(JFrameVentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -61,7 +81,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelArchivosCopiar = new javax.swing.JLabel();
         jLabelDestino = new javax.swing.JLabel();
         jLabelTiposArchivo = new javax.swing.JLabel();
-        jButtonColorFondoInformacion = new GUI.JButtonColorFondo();
         jButtonColorFondoSeleccionarOrigen = new GUI.JButtonColorFondo();
         jButtonColorFondoSeleccionarRutaDestino = new GUI.JButtonColorFondo();
         jCheckBoxTodos = new GUI.JCheckBoxPropio();
@@ -93,6 +112,9 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jButtonColorFondoEspacioLibre = new GUI.JButtonColorFondo();
         jButtonColorFondoDuplicados = new GUI.JButtonColorFondo();
         jButtonColorFondoVerDuplicados = new GUI.JButtonColorFondo();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        ayudaMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -116,14 +138,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelTiposArchivo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelTiposArchivo.setText("Selecciona los archivos a copiar");
 
-        jButtonColorFondoInformacion.setText("Informacion");
-        jButtonColorFondoInformacion.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButtonColorFondoInformacionMouseClicked(evt);
-            }
-        });
-
-        jButtonColorFondoSeleccionarOrigen.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoSeleccionarOrigen.setText("Seleccionar");
         jButtonColorFondoSeleccionarOrigen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -131,7 +145,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoSeleccionarRutaDestino.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoSeleccionarRutaDestino.setText("Seleccionar");
         jButtonColorFondoSeleccionarRutaDestino.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -139,7 +152,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxTodos.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxTodos.setText("Todos");
         jCheckBoxTodos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -147,7 +159,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxJPG.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxJPG.setText("jpg");
         jCheckBoxJPG.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -155,7 +166,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxPNG.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxPNG.setText("png");
         jCheckBoxPNG.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -163,7 +173,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxGIF.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxGIF.setText("gif");
         jCheckBoxGIF.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -171,7 +180,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxAVI.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxAVI.setText("avi");
         jCheckBoxAVI.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -179,7 +187,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxMP4.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxMP4.setText("mp4");
         jCheckBoxMP4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -187,7 +194,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxMP3.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxMP3.setText("mp3");
         jCheckBoxMP3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -195,7 +201,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxWAV.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxWAV.setText("wav");
         jCheckBoxWAV.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -203,7 +208,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxPDF.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxPDF.setText("pdf");
         jCheckBoxPDF.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -211,7 +215,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxTXT.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxTXT.setText("txt");
         jCheckBoxTXT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -219,7 +222,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jCheckBoxDOC.setPropiedades(new GUI.PropiedadesCheckBox(new java.awt.Color(-16741377), new java.awt.Font("Tahoma",1,11)));
         jCheckBoxDOC.setText("doc");
         jCheckBoxDOC.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -241,11 +243,10 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                         .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabelConfiguracion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabelDestino, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabelArchivosCopiar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE))
+                            .addComponent(jLabelArchivosCopiar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonColorFondoInformacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jButtonColorFondoSeleccionarOrigen, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
+                            .addComponent(jButtonColorFondoSeleccionarOrigen, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
                             .addComponent(jButtonColorFondoSeleccionarRutaDestino, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap())
                     .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
@@ -285,10 +286,8 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelConfiguracionLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelConfiguracion)
-                    .addComponent(jButtonColorFondoInformacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelConfiguracion)
+                .addGap(7, 7, 7)
                 .addGroup(jPanelConfiguracionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelArchivosCopiar, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
                     .addComponent(jButtonColorFondoSeleccionarOrigen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -335,7 +334,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelOtrasOpciones.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelOtrasOpciones.setText("Otras Opciones");
 
-        jButtonColorFondoVerCopiados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoVerCopiados.setText("Ver archivos copiados");
         jButtonColorFondoVerCopiados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -343,7 +341,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoEliminarCopia.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoEliminarCopia.setText("Eliminar copia");
         jButtonColorFondoEliminarCopia.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -351,7 +348,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoEliminarDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoEliminarDuplicados.setText("Eliminar duplicados");
         jButtonColorFondoEliminarDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -359,7 +355,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoOrganizarBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoOrganizarBackUp.setText("Organizar BackUp");
         jButtonColorFondoOrganizarBackUp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -367,7 +362,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoEliminarCopiaOrdenada.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoEliminarCopiaOrdenada.setText("Eliminar copia ordenada");
         jButtonColorFondoEliminarCopiaOrdenada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -413,7 +407,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
         jLabelAvisos.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelAvisos.setText(" ");
 
-        jButtonColorFondoHacerBackUp.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoHacerBackUp.setText("Hacer BackUp");
         jButtonColorFondoHacerBackUp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -421,7 +414,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoEspacioLibre.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoEspacioLibre.setText("Espacio libre en disco");
         jButtonColorFondoEspacioLibre.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -429,7 +421,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoDuplicados.setText("Archivos duplicados");
         jButtonColorFondoDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -437,7 +428,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonColorFondoVerDuplicados.setColorBoton(new GUI.ColorBoton(new java.awt.Color(-16741377)));
         jButtonColorFondoVerDuplicados.setText("Ver duplicados");
         jButtonColorFondoVerDuplicados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -445,13 +435,23 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jMenu1.setText("Ayuda");
+
+        ayudaMenuItem.setText("Ayuda pantalla principal");
+        jMenu1.add(ayudaMenuItem);
+
+        jMenuBar1.add(jMenu1);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabelAvisos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -480,10 +480,7 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanelConfiguracion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanelOtrasOpciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabelAvisos, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jPanelOtrasOpciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -526,12 +523,6 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButtonColorFondoInformacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoInformacionMouseClicked
-        jLabelAvisos.setText("");
-        PantallaInformación pantallaInformacion = new PantallaInformación(this, true);
-        pantallaInformacion.setVisible(true);
-    }//GEN-LAST:event_jButtonColorFondoInformacionMouseClicked
 
     private void jButtonColorFondoHacerBackUpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonColorFondoHacerBackUpMouseClicked
         try {
@@ -938,13 +929,13 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem ayudaMenuItem;
     private GUI.JButtonColorFondo jButtonColorFondoDuplicados;
     private GUI.JButtonColorFondo jButtonColorFondoEliminarCopia;
     private GUI.JButtonColorFondo jButtonColorFondoEliminarCopiaOrdenada;
     private GUI.JButtonColorFondo jButtonColorFondoEliminarDuplicados;
     private GUI.JButtonColorFondo jButtonColorFondoEspacioLibre;
     private GUI.JButtonColorFondo jButtonColorFondoHacerBackUp;
-    private GUI.JButtonColorFondo jButtonColorFondoInformacion;
     private GUI.JButtonColorFondo jButtonColorFondoOrganizarBackUp;
     private GUI.JButtonColorFondo jButtonColorFondoSeleccionarOrigen;
     private GUI.JButtonColorFondo jButtonColorFondoSeleccionarRutaDestino;
@@ -974,6 +965,8 @@ public class JFrameVentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelRutaOrigen;
     private javax.swing.JLabel jLabelTiposArchivo;
     private javax.swing.JLabel jLabelTitulo;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanelConfiguracion;
     private javax.swing.JPanel jPanelOtrasOpciones;
     private javax.swing.JProgressBar jProgressBarFicherosCopiados;

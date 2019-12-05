@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <toc version="1.0">
-	<tocitem text="EjemploJavaHelp" target="aplicacion">
-		<tocitem text="Ventanaprincipal" target="ventana_principal"/>
-		<tocitem text="Ventanasecundaria" target="ventana_secundaria"/>
+	<tocitem text="BackUp" target="JFrameVentanaPrincipal">
+		<tocitem text="VentanaTablaFicheros" target="TablaFicheros"/>
+		<tocitem text="VentanaTablaFicherosDuplicados" target="TablaFicherosDuplicados"/>
 	</tocitem>
 </toc>

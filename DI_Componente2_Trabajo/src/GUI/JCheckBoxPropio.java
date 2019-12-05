@@ -20,15 +20,25 @@ public class JCheckBoxPropio extends JCheckBox implements Serializable {
         super.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (isSelected()) {
-                    setForeground(propiedades.getColorTexto());
-                    setFont(propiedades.getTipoFuente());
+                if (propiedades == null) {
+                    if (isSelected()) {
+                        setForeground(Color.BLUE);
+                        setFont(new Font("Tahoma", Font.BOLD, 11));
+                    } else {
+                        setForeground(Color.BLACK);
+                        Font fuente = new Font("Tahoma", Font.PLAIN, 11);
+                        setFont(fuente);
+                    }
                 } else {
-                    setForeground(Color.BLACK);
-                    Font fuente = new Font("Tahoma", Font.PLAIN, 11);
-                    setFont(fuente);
+                    if (isSelected()) {
+                        setForeground(propiedades.getColorTexto());
+                        setFont(propiedades.getTipoFuente());
+                    } else {
+                        setForeground(Color.BLACK);
+                        Font fuente = new Font("Tahoma", Font.PLAIN, 11);
+                        setFont(fuente);
+                    }
                 }
-
             }
         });
     }

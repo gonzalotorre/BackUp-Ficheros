@@ -19,7 +19,11 @@ public class JButtonColorFondo extends JButton implements Serializable {
         super.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                setBackground(colorBoton.getColorFondo());
+                if(colorBoton == null){
+                    setBackground(Color.BLUE);
+                } else {
+                    setBackground(colorBoton.getColorFondo());
+                }
             }
 
             @Override

@@ -8,7 +8,7 @@ import java.io.Serializable;
  * @author Gonzalo
  */
 public class ColorBoton implements Serializable {
-    
+
     private Color colorFondo;
 
     public ColorBoton(Color colorFondo) {
@@ -22,5 +22,5 @@ public class ColorBoton implements Serializable {
     public void setColorFondo(Color colorFondo) {
         this.colorFondo = colorFondo;
     }
-    
+
 }
